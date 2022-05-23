@@ -171,7 +171,7 @@ class GameSprite(pg.sprite.Sprite):
         for i in ALL_GROUP:
             i.remove(self)
 
-def update(self):
+    def update(self):
 
         # logic deletes sprite if it's outside game borders
         if not BORDER[0][0] <= self.position.x <= BORDER[0][1]:
